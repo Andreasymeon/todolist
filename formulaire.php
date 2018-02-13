@@ -1,14 +1,14 @@
 <!-- L'ajout de la tache -->
 <?php 
+
 if(isset($_POST["tache"])) {
 	$tache = htmlspecialchars($_POST["tache"]);
 	$json_file = file_get_contents('todo.json'); //on load le contenu du JSON
 	$data = json_decode($json_file, true); // on décode le contenu du JSON
 	$data[] = $tache; // on ajoute la tache dans le tableau data
-	$ecriture_tache = json_encode($data , JSON_FORCE_OBJECT); //on encode la tache en JSON
-	$stock_tache = file_put_contents('todo.json' , $ecriture_tache);
+	$ecriture_tache = json_encode($data, JSON_FORCE_OBJECT); //on encode la tache en format JSON
+	$stock_tache = file_put_contents('todo.json' , $ecriture_tache); //rajouter dans le fichier JSON
 }
-
 
 ?>
 <!DOCTYPE html>
@@ -25,6 +25,7 @@ if(isset($_POST["tache"])) {
 		<input type="submit">
 	</form>
 
+<?php include 'contenu.php'; ?>
 
 </body>
 </html>
