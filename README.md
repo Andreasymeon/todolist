@@ -7,9 +7,6 @@ PHP, jQuery, JSON.
 
 Pair coding project done in 3 days with Glenn Carroy.
 
-## Deadline
-4 days.
-
 Creates a basic and reliable task management tool. It contains two screens:
 
 - screen 1: a small form to add a task.
@@ -35,10 +32,7 @@ Francais
 
 PHP, jQuery, JSON.
 
-Pair coding avec Glenn Carroy.
-
-## Deadline
-4 jours.
+Projet en pair coding réalisé en 3jours avec Glenn Carroy.
 
 Crée un outil de gestion de tâches basique et fiable. Il contient deux écrans :  
 
